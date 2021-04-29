@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font: poppins;
+
+}
+
+#main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 10px 5px rgba(128, 128, 128, 5);
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+li a {
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    transition: color 1s;
+}
+
+
+.image img{
+    width: 100px;
+    height: 50px;
+    object-fit: content;
+}
+
+.massege {
+    color: #39bfbd;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: color 1s;
+}
+
+#all-content {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.container:hover .image1 {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.portfolio {
+    text-decoration: none;
+    background-color:  #39bfbd;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+.content {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-content {
+    margin-bottom: 50px;
+}
+
+.portfolio:hover {
+    background-color: white;
+    color: #39bfbd;
+    opacity: 1;
+}
+
+.massege:hover {
+    color: red;
+}
+
+li:hover a {
+    background-color: #39bfbd;
+    color: white;
+}
+
+.image:hover img {
+    filter: contrast(3);
+}
